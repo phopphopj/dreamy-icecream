@@ -577,10 +577,15 @@ h1,h2,h3,.brand-text,.nav a,.btn,.pill,.badge,.footer-title{
   white-space: nowrap;
 }
 
-.reviews-list{
-  display:grid;
-  gap:12px;
+.reviews-list {
+  display: grid;
+  gap: 12px;
+
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 6px;
 }
+
 
 .review{
   border-radius: 16px;
