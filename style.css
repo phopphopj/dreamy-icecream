@@ -193,8 +193,12 @@ h1,h2,h3,.brand-text,.nav a,.btn,.pill,.badge,.footer-title{
   padding:12px 14px;
   border-radius:14px;
   font-size:15px;
-  transition: transform .08s ease, box-shadow .12s ease, background .12s ease;
+  transition: all 0.25s ease;
   user-select:none;
+}
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(130,82,157,.25);
 }
 
 .btn:active{ transform: translateY(1px); }
