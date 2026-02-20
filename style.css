@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth !important;
+}
 @font-face {
   font-family: "oduda";
   src: url("fonts/Oduda-Bold-Demo.otf") format("opentype");
