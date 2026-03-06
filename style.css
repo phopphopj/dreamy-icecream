@@ -93,7 +93,7 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name{
 
 .nav a{
   text-decoration:none;
-  color:var(--text);
+  color:var(--purple);
   padding:8px 10px;
   border-radius:10px;
   transition:background .2s ease, transform .2s ease;
