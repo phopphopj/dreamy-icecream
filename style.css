@@ -105,8 +105,8 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name{
 }
 
 .nav-cta{
-  border:1px solid var(--green);
-  color:var(--green);
+  border:1px solid var(--purple);
+  color:var(--purple);
 }
 
 /* ---------- HERO ---------- */
