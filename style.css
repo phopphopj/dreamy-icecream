@@ -221,6 +221,9 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name{
   color:var(--muted);
 }
 
+.section h3{
+  color:var(--purple);
+}
 /* ---------- CARDS ---------- */
 
 .card{
