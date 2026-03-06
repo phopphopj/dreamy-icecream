@@ -132,11 +132,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name{
   transition:transform .25s ease, box-shadow .25s ease;
 }
 
-.hero-center:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-hover);
-}
-
 .hero-logo-big{
   width:60px;
   height:60px;
@@ -167,11 +162,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name{
   overflow:hidden;
   box-shadow:var(--shadow);
   transition:transform .25s ease, box-shadow .25s ease;
-}
-
-.hero-photo-card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-hover);
 }
 
 .hero-photo-soft{
