@@ -104,16 +104,15 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name{
   transform:translateY(-1px);
 }
 
-.nav-cta:hover{
-  background:var(--purple);
-  color:white;
-}
-
 .nav-cta{
   background:var(--purple);
   color:white;
   border:none;
 }
+
+.nav-cta:hover{
+  background:var(--purple);
+  color:white;
 }
 
 /* ---------- HERO ---------- */
