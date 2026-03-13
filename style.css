@@ -502,9 +502,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   text-decoration:none;
 }
 
-.footer-right a:hover{
-  text-decoration:underline;
-}
 
 /* ---------- RESPONSIVE ---------- */
 
