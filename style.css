@@ -337,11 +337,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   transition:transform .25s ease, box-shadow .25s ease;
 }
 
-.menu-link:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-hover);
-}
-
 .menu-img{
   width:100%;
   display:block;
@@ -425,10 +420,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   transition:transform .2s ease, box-shadow .2s ease;
 }
 
-.review:hover{
-  transform:translateY(-2px);
-  box-shadow:0 10px 16px rgba(0,0,0,.08);
-}
 
 .review-top{
   display:flex;
