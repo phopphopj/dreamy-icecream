@@ -241,11 +241,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   transition:transform .25s ease, box-shadow .25s ease;
 }
 
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-hover);
-}
-
 .grid-3{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -272,10 +267,6 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   transition:transform .25s ease, box-shadow .25s ease;
 }
 
-.flavor-card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-hover);
-}
 
 .flavor-imgwrap{
   width:140px;
