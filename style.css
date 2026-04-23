@@ -61,6 +61,7 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   background:#ffffff;
   backdrop-filter:blur(8px);
   border-bottom:1px solid rgba(0,0,0,.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
 }
 
 .topbar-inner{
