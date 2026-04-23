@@ -394,8 +394,8 @@
           `;
         }).join('');
       } catch (e) {
-        if (pillEl) pillEl.textContent = 'error';
-        if (listEl) listEl.innerHTML = '<div class="empty">could not load reviews. check supabase setup.</div>';
+        if (pillEl) pillEl.textContent = 'sorry!';
+        if (listEl) listEl.innerHTML = '<div class="empty">could not load reviews. this is our fault, not yours. in maintenance!</div>';
       }
     };
 
