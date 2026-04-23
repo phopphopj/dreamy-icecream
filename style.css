@@ -105,7 +105,8 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
 
 .nav a:hover{
   background:rgba(130,82,157,.1);
-  transform:translateY(-1px);
+  transform:translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,.12);
 }
 
 .nav-cta{
@@ -115,8 +116,8 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
 }
 
 .nav-cta:hover{
-  background:var(--purple);
-  color:white;
+  transform:translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
 }
 
 /* ---------- HERO ---------- */
