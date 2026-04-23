@@ -147,6 +147,7 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
 .hero-center h1{
   margin:12px 0;
   font-size:32px;
+  color:var(--purple);
 }
 
 .lead{
