@@ -169,8 +169,7 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   box-shadow:var(--shadow);
   transition:transform .25s ease, box-shadow .25s ease;
 
-  max-width:900px;   /* controls width */
-  max-height:500px;  /* controls height */
+  max-width:800px;   /* adjust this */
 }
 
 .hero-photo-soft{
