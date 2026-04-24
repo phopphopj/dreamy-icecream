@@ -68,7 +68,8 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:12px 0;
+  padding:12px 24px;
+  width:100%;      
 }
 
 .brand{
