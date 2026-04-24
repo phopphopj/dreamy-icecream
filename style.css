@@ -169,13 +169,12 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   box-shadow:var(--shadow);
   transition:transform .25s ease, box-shadow .25s ease;
 
-  max-width:800px;   /* adjust this */
+  max-width:700px;   /* adjust this */
 }
 
 .hero-photo-soft{
   width:100%;
-  height:100%;
-  object-fit:cover;
+  height:auto;   /* important */
   display:block;
 }
 
