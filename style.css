@@ -216,6 +216,16 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   color:var(--purple);
 }
 
+.btn-line{
+  background:var(--green);
+  color:white;
+  border:none;
+}
+
+.btn-line:hover{
+  filter:brightness(0.9);
+}
+
 /* ---------- SECTIONS ---------- */
 
 .section{
