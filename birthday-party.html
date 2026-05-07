@@ -19,17 +19,27 @@
         <a href="index.html#home">home</a>
         <a href="index.html#flavors">flavors</a>
         <a href="index.html#menu">menu</a>
+        <a href="index.html#reviews">reviews</a>
         <a href="index.html#order" class="nav-cta">order</a>
       </nav>
     </div>
   </header>
 
-  <main class="flavor-page-main">
-    <section class="birthday-hero">
+  <main class="birthday-page">
+    <section class="birthday-section">
       <div class="container birthday-layout">
 
-        <div class="birthday-photo-card">
-          <img src="assets/birthday_party.jpg" alt="birthday party ice cream">
+        <div class="birthday-carousel-card">
+          <div class="birthday-carousel">
+            <div class="birthday-track" id="birthdayTrack">
+              <img src="assets/birthday_party.jpg" alt="birthday party ice cream">
+              <img src="assets/birthday_party2.jpg" alt="birthday party ice cream">
+              <img src="assets/birthday_party3.jpg" alt="birthday party ice cream">
+            </div>
+
+            <button class="birthday-arrow birthday-prev" onclick="moveBirthdaySlide(-1)">‹</button>
+            <button class="birthday-arrow birthday-next" onclick="moveBirthdaySlide(1)">›</button>
+          </div>
         </div>
 
         <div class="birthday-info-card">
@@ -42,7 +52,13 @@
             in every cup.
           </p>
 
-          <div class="birthday-buttons">
+          <div class="birthday-details">
+            <div><strong>flavor:</strong> vanilla</div>
+            <div><strong>mix-in:</strong> sprinkles</div>
+            <div><strong>price:</strong> 80 thb / cup</div>
+          </div>
+
+          <div class="order-actions">
             <a class="btn btn-primary" href="index.html#order">order now</a>
             <a class="btn btn-ghost" href="index.html#flavors">back to flavors</a>
           </div>
@@ -51,5 +67,34 @@
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-logo" src="assets/logo.jpg" alt="dreamy icecream logo" />
+        <div>
+          <div class="footer-title">dreamy icecream</div>
+          <div class="footer-sub">happiness in a cup</div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="index.html#home">home</a>
+        <span class="dot">•</span>
+        <a href="https://instagram.com/dreamyicecream.official" target="_blank">instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let birthdaySlide = 0;
+
+    function moveBirthdaySlide(step){
+      const track = document.getElementById("birthdayTrack");
+      const total = track.children.length;
+
+      birthdaySlide = (birthdaySlide + step + total) % total;
+      track.style.transform = `translateX(-${birthdaySlide * 100}%)`;
+    }
+  </script>
 </body>
 </html>
