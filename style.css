@@ -570,3 +570,103 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   text-decoration:none;
   color:inherit;
 }
+
+/* ---------- BIRTHDAY PARTY PAGE ---------- */
+
+.birthday-page{
+  padding-top:120px;
+}
+
+.birthday-section{
+  padding:40px 0;
+}
+
+.birthday-layout{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:32px;
+  align-items:center;
+}
+
+.birthday-carousel-card,
+.birthday-info-card{
+  background:white;
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:22px;
+}
+
+.birthday-carousel{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  aspect-ratio:3 / 4;
+  margin:auto;
+  overflow:hidden;
+  border-radius:24px;
+  background:white;
+}
+
+.birthday-track{
+  display:flex;
+  height:100%;
+  transition:transform .4s ease;
+}
+
+.birthday-track img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  flex-shrink:0;
+  display:block;
+  border-radius:24px;
+}
+
+.birthday-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:none;
+  background:rgba(130,82,157,.9);
+  color:white;
+  font-size:32px;
+  cursor:pointer;
+}
+
+.birthday-prev{ left:12px; }
+.birthday-next{ right:12px; }
+
+.birthday-info-card h1{
+  color:var(--purple);
+  font-size:48px;
+  margin:14px 0;
+}
+
+.birthday-info-card p,
+.birthday-details{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+.birthday-details{
+  display:grid;
+  gap:8px;
+  margin:18px 0;
+}
+
+@media(max-width:900px){
+  .birthday-layout{
+    grid-template-columns:1fr;
+  }
+
+  .birthday-carousel{
+    max-width:320px;
+  }
+
+  .birthday-info-card h1{
+    font-size:38px;
+  }
+}
