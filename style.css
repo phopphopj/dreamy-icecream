@@ -647,8 +647,8 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   transition:all .25s ease;
 }
 
-.birthday-prev{ left:20px; }
-.birthday-next{ right:20px; }
+.birthday-prev{ left:30px; }
+.birthday-next{ right:30px; }
 
 .birthday-info-card h1{
   color:var(--purple);
