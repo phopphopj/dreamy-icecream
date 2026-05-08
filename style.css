@@ -670,3 +670,13 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
     font-size:38px;
   }
 }
+/* instagram button hover */
+a[href*="instagram"]{
+  transition:transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+
+a[href*="instagram"]:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 12px 24px rgba(130,82,157,.35);
+  filter:brightness(1.05);
+}
