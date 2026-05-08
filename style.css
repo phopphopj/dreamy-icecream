@@ -764,3 +764,8 @@ a[href*="instagram"]:hover{
   background:#1ec45a;
   box-shadow:0 14px 28px rgba(34,172,80,.5);
 }
+/* FIX order button hover (keep purple) */
+.hero-buttons .btn-primary:hover{
+  background:var(--purple);
+  box-shadow:0 12px 24px rgba(130,82,157,.35);
+}
