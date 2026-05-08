@@ -626,14 +626,24 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  width:42px;
-  height:42px;
+  
+  width:44px;
+  height:44px;
   border-radius:50%;
   border:none;
+
   background:rgba(130,82,157,.9);
   color:white;
-  font-size:32px;
+  font-size:22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
   cursor:pointer;
+  z-index:2;
+
+  transition:all .25s ease;
 }
 
 .birthday-prev{ left:12px; }
