@@ -704,3 +704,13 @@ a[href*="instagram"]:hover{
 .hero-buttons .btn:active{
   transform:translateY(0) scale(.96);
 }
+/* LINE button hover (override) */
+.btn-line{
+  background:var(--green);
+}
+
+.btn-line:hover{
+  background:#1ec45a;
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:0 12px 24px rgba(34,172,80,.4);
+}
