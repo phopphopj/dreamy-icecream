@@ -839,3 +839,99 @@ a[href*="instagram"]:hover{
   border-radius:24px;
   box-shadow:0 20px 50px rgba(0,0,0,.35);
 }
+
+/* ---------- FLAVOR PAGE (same as birthday) ---------- */
+
+.flavor-page{
+  padding-top:120px;
+}
+
+.flavor-section{
+  padding:40px 0;
+}
+
+.flavor-layout{
+  display:grid;
+  grid-template-columns:420px 1fr;
+  gap:32px;
+  align-items:center;
+}
+
+/* left image/card */
+.flavor-carousel-card,
+.flavor-info-card{
+  background:white;
+  border-radius:24px;
+  box-shadow:var(--shadow);
+  padding:22px;
+}
+
+/* carousel */
+.flavor-carousel{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  aspect-ratio:3 / 4;
+  margin:auto;
+  overflow:hidden;
+  border-radius:24px;
+}
+
+.flavor-track{
+  display:flex;
+  height:100%;
+  transition:transform .4s ease;
+}
+
+.flavor-track img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+/* arrows */
+.flavor-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:42px;
+  height:42px;
+  border:none;
+  background:rgba(130,82,157,.9);
+  color:white;
+  font-size:28px;
+  cursor:pointer;
+}
+
+.flavor-prev{ left:-10px; }   /* pushes it more to the side */
+.flavor-next{ right:-10px; }
+
+/* text */
+.flavor-info-card h1{
+  color:var(--purple);
+  font-size:48px;
+  margin:14px 0;
+}
+
+.flavor-details{
+  display:grid;
+  gap:8px;
+  margin:18px 0;
+  color:var(--muted);
+}
+
+/* responsive */
+@media(max-width:900px){
+  .flavor-layout{
+    grid-template-columns:1fr;
+  }
+
+  .flavor-carousel{
+    max-width:320px;
+  }
+
+  .flavor-info-card h1{
+    font-size:38px;
+  }
+}
