@@ -740,3 +740,10 @@ a[href*="instagram"]:hover{
   background:#1ec45a;
   box-shadow:0 14px 28px rgba(34,172,80,.45);
 }
+.hero-buttons .btn-line:hover{
+  background:#1ec45a;
+  transform:translateY(-4px) scale(1.06);
+
+  /* 💥 force green shadow */
+  box-shadow:0 14px 28px rgba(34,172,80,.5) !important;
+}
