@@ -691,3 +691,16 @@ a[href*="instagram"]:hover{
   box-shadow:0 12px 24px rgba(130,82,157,.35);
   filter:brightness(1.05);
 }
+.hero-buttons .btn{
+  transition:transform .25s ease, box-shadow .25s ease, filter .25s ease;
+}
+
+.hero-buttons .btn:hover{
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 12px 24px rgba(130,82,157,.25);
+  filter:brightness(1.05);
+}
+
+.hero-buttons .btn:active{
+  transform:translateY(0) scale(.96);
+}
