@@ -747,3 +747,20 @@ a[href*="instagram"]:hover{
   /* 💥 force green shadow */
   box-shadow:0 14px 28px rgba(34,172,80,.5) !important;
 }
+/* fix hero buttons colors */
+
+/* order button (purple again) */
+.hero-buttons .btn-primary{
+  background:var(--purple);
+}
+
+/* LINE button (green) */
+.hero-buttons .btn-line{
+  background:var(--green);
+}
+
+/* LINE hover (green glow) */
+.hero-buttons .btn-line:hover{
+  background:#1ec45a;
+  box-shadow:0 14px 28px rgba(34,172,80,.5);
+}
