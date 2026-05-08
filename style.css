@@ -362,6 +362,11 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   display:block;
   border-radius:var(--radius);
 }
+.menu-img{
+  width:100%;
+  max-width:1000px;  /* 👈 makes it bigger */
+  margin:auto;
+}
 
 .list{
   margin:0;
