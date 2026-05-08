@@ -1,1 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>unicorn dream — dreamy icecream</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body class="birthday-page">
+
+<section class="birthday-section">
+  <div class="container birthday-layout">
+
+    <!-- IMAGE / CAROUSEL -->
+    <div class="birthday-carousel-card">
+      <div class="birthday-carousel">
+        <div class="birthday-track" id="unicornTrack">
+          <img src="assets/unicorn_dream.jpg">
+          <img src="assets/unicorn_dream2.jpg">
+          <img src="assets/unicorn_dream3.jpg">
+        </div>
+
+        <button class="birthday-arrow birthday-prev" onclick="moveUnicorn(-1)">‹</button>
+        <button class="birthday-arrow birthday-next" onclick="moveUnicorn(1)">›</button>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="birthday-info-card">
+      <span class="pill pill-purple">classic</span>
+
+      <h1>unicorn dream</h1>
+
+      <p class="lead">candy floss with marshmallows.</p>
+
+      <div class="birthday-details">
+        <div>toppings: marshmallows</div>
+        <div>texture: soft & fluffy</div>
+        <div>vibe: sweet + magical</div>
+      </div>
+
+      <p>
+        a fun and colorful flavor that feels like a dream.
+        super sweet, super soft, and perfect if you like candy-style icecream.
+      </p>
+
+      <div class="order-actions">
+        <a href="index.html#order" class="btn btn-primary">order now</a>
+        <a href="index.html#flavors" class="btn btn-ghost">back</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+let unicornSlide = 0;
+
+function moveUnicorn(direction){
+  const track = document.getElementById("unicornTrack");
+  const total = track.children.length;
+
+  unicornSlide = (unicornSlide + direction + total) % total;
+
+  track.style.transform = `translateX(-${unicornSlide * 100}%)`;
+}
+</script>
+
+</body>
+</html>
