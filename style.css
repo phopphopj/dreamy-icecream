@@ -626,15 +626,15 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   position:absolute;
   top:50%;
   transform:translateY(-50%);
-  
-  width:44px;
-  height:44px;
+
+  width:38px;          /* smaller */
+  height:38px;
   border-radius:50%;
   border:none;
 
-  background:rgba(130,82,157,.9);
+  background:rgba(130,82,157,0.6);  /* softer */
   color:white;
-  font-size:22px;
+  font-size:18px;     /* smaller arrow */
 
   display:flex;
   align-items:center;
@@ -643,6 +643,7 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
   cursor:pointer;
   z-index:2;
 
+  backdrop-filter:blur(6px); /* 🔥 glass effect */
   transition:all .25s ease;
 }
 
