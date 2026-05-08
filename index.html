@@ -179,29 +179,22 @@
       </div>
     </section>
 
-    <section class="section" id="menu">
-      <div class="container">
-        <div class="section-head">
-          <h2>menu</h2>
-          <p></p>
-        </div>
+   <section class="section" id="menu">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="menu-popup-title" onclick="openMenuPopup()">menu</h2>
+      <p>hover or click the menu title to view full size.</p>
+    </div>
 
-        <div class="menu-wrap">
-          <a class="menu-link" href="assets/menu.png" target="_blank" rel="noreferrer">
-            <img class="menu-img" src="assets/menu.png" alt="dreamy icecream menu" />
-          </a>
-          <div class="menu-side">
-            <div class="card">
-              <h3>notes:</h3>
-              <ul class="list">
-                <li>tap the menu to open full size</li>
-                <li>80 thb per cup</li>
-                </ul>
-            </div>
+    <div class="menu-wrap">
+      <img class="menu-img menu-hover" src="assets/menu.png" alt="dreamy icecream menu" onclick="openMenuPopup()" />
+    </div>
+  </div>
+</section>
+
+<div class="menu-popup" id="menuPopup" onclick="closeMenuPopup()">
+  <img src="assets/menu.png" alt="dreamy icecream menu full size">
 </div>
-        </div>
-      </div>
-    </section>
 
     <section class="section" id="order">
       <div class="container">
