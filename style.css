@@ -935,3 +935,13 @@ a[href*="instagram"]:hover{
     font-size:38px;
   }
 }
+.flavor-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:24px;
+}
+
+.flavor-card{
+  width:auto;
+  min-height:180px;
+}
