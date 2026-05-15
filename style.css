@@ -954,3 +954,7 @@ a[href*="instagram"]:hover{
 .rating-count {
   color: var(--primary);
 }
+
+label {
+  color: var(--purple:#82529d;); /* same purple */
+}
