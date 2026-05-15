@@ -484,8 +484,9 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
 
 .rating-pill{
   font-family:"oduda",system-ui;
-  color:var(--text);
+  color:#FFD700; /* yellow */
   margin-bottom:10px;
+  font-weight: bold;
 }
 
 /* ---------- FOOTER ---------- */
