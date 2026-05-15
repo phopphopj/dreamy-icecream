@@ -483,6 +483,7 @@ h1,h2,h3,.nav a,.pill,.btn,.brand-text,.footer-title,.label,.review-name,.footer
 }
 
 .rating-pill{
+  color:#purple;
   font-family:"oduda",system-ui;
   margin-bottom:10px;
   font-weight: bold;
