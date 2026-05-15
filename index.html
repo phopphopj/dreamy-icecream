@@ -373,7 +373,10 @@
         }
 
         const avg = reviews.reduce((s, r) => s + (Number(r.stars) || 0), 0) / reviews.length;
-        if (pillEl) pillEl.textContent = `${avg.toFixed(1)} / 5 • ${reviews.length} review${reviews.length === 1 ? '' : 's'}`;
+        if (pillEl) pillEl.innerHTML = `
+  <span class="rating-score">${avg.toFixed(1)} / 5</span>
+  <span class="rating-count"> • ${reviews.length} review${reviews.length === 1 ? '' : 's'}</span>
+`;
 
         listEl.innerHTML = reviews.map(r => {
           const name = (r.name || 'anonymous').replace(/</g,'&lt;').replace(/>/g,'&gt;');
