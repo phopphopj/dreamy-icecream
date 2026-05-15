@@ -14,6 +14,7 @@
         <img class="brand-mark" src="assets/logo.jpg" alt="logo" />
         <span class="brand-text">dreamy icecream</span>
       </a>
+
       <nav class="nav">
         <a href="index.html#home">home</a>
         <a href="index.html#flavors">flavors</a>
@@ -28,31 +29,24 @@
     <section class="birthday-section">
       <div class="container birthday-layout">
 
-        <!-- IMAGE -->
         <div class="birthday-carousel-card">
           <div class="birthday-carousel">
             <div class="birthday-track" id="jelloTrack">
-              <img src="assets/phops_balloon_pop.jpg" alt="jello demo">
+              <img src="assets/jello_demo.jpg" alt="jello demo 1">
+              <img src="assets/phops_balloon_pop.jpg" alt="jello demo 2">
+              <img src="assets/jello_demo.jpg" alt="jello demo 3">
             </div>
 
-            <button class="birthday-arrow birthday-prev" onclick="moveJelloSlide(-1)">
-              ‹
-            </button>
-            <button class="birthday-arrow birthday-next" onclick="moveJelloSlide(1)">
-              ›
-            </button>
+            <button class="birthday-arrow birthday-prev" onclick="moveJelloSlide(-1)">‹</button>
+            <button class="birthday-arrow birthday-next" onclick="moveJelloSlide(1)">›</button>
           </div>
         </div>
 
-        <!-- INFO -->
         <div class="birthday-info-card">
           <span class="pill pill-yellow">classic flavor</span>
-
           <h1>jello demo</h1>
-
           <p class="lead">betagen with jelly.</p>
-
-          <p>fun, bouncy, and refreshing drink + jelly combo!</p>
+          <p>fun, bouncy, and refreshing — a playful mix of yogurt drink and jelly!</p>
 
           <div class="birthday-details">
             <div><strong>flavor:</strong> yogurt</div>
@@ -83,7 +77,7 @@
       <div class="footer-right">
         <a href="index.html#home">home</a>
         <span class="dot">•</span>
-        <a href="#">instagram</a>
+        <a href="https://instagram.com/dreamyicecream.official" target="_blank">instagram</a>
       </div>
     </div>
   </footer>
@@ -91,7 +85,7 @@
   <script>
     let jelloSlide = 0;
 
-    function moveJelloSlide(step){
+    function moveJelloSlide(step) {
       const track = document.getElementById("jelloTrack");
       const total = track.children.length;
 
@@ -99,3 +93,5 @@
       track.style.transform = `translateX(-${jelloSlide * 100}%)`;
     }
   </script>
+</body>
+</html>
