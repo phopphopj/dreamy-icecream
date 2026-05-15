@@ -956,5 +956,5 @@ a[href*="instagram"]:hover{
 }
 
 label {
-  color: var(--purple:#82529d;); /* same purple */
+  color: #82529d;
 }
