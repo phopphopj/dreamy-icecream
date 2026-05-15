@@ -958,3 +958,9 @@ a[href*="instagram"]:hover{
 .leave-review label {
   color: #82529d;
 }
+
+label, 
+.leave-review p, 
+.leave-review span {
+  color: #82529d !important;
+}
