@@ -946,3 +946,11 @@ a[href*="instagram"]:hover{
   width:auto;
   min-height:180px;
 }
+
+.rating-score {
+  color: #FFD700; /* yellow */
+}
+
+.rating-count {
+  color: #a855f7; /* purple */
+}
