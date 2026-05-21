@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phop’s Balloon Pop — dreamy icecream</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html#home">
+        <img class="brand-mark" src="assets/logo.jpg" alt="logo" />
+        <span class="brand-text">dreamy icecream</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#home">home</a>
+        <a href="index.html#flavors">flavors</a>
+        <a href="index.html#menu">menu</a>
+        <a href="index.html#reviews">reviews</a>
+        <a href="index.html#order" class="nav-cta">order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="birthday-page">
+    <section class="birthday-section">
+      <div class="container birthday-layout">
+
+        <div class="birthday-carousel-card">
+          <div class="birthday-carousel">
+            <div class="birthday-track" id="phopTrack">
+              <img src="assets/phops_balloon_pop.jpg" alt="Phop’s Balloon Pop 1">
+              <img src="assets/phops_balloon_pop2.jpg" alt="Phop’s Balloon Pop 2">
+              <img src="assets/phops_balloon_pop3.jpg" alt="Phop’s Balloon Pop 3">
+            </div>
+
+            <button class="birthday-arrow birthday-prev" onclick="movePhopSlide(-1)">‹</button>
+            <button class="birthday-arrow birthday-next" onclick="movePhopSlide(1)">›</button>
+          </div>
+        </div>
+
+        <div class="birthday-info-card">
+          <span class="pill pill-red">classic flavor</span>
+          <h1>Phop’s Balloon Pop</h1>
+          <p class="lead">strawberry ice cream with popping candy.</p>
+          <p>sweet, fizzy, colorful, and fun — like a balloon party in every bite!</p>
+
+          <div class="birthday-details">
+            <div><strong>flavor:</strong> strawberry</div>
+            <div><strong>mix-in:</strong> popping candy</div>
+            <div><strong>original price:</strong> 80 thb / cup</div>
+          </div>
+
+          <div class="order-actions">
+            <a class="btn btn-primary" href="index.html#order">order now</a>
+            <a class="btn btn-ghost" href="index.html#flavors">back to flavors</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img class="footer-logo" src="assets/logo.jpg" alt="logo" />
+        <div>
+          <div class="footer-title">dreamy icecream</div>
+          <div class="footer-sub">happiness in a cup</div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="index.html#home">home</a>
+        <span class="dot">•</span>
+        <a href="https://instagram.com/dreamyicecream.official" target="_blank">instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let phopSlide = 0;
+
+    function movePhopSlide(step) {
+      const track = document.getElementById("phopTrack");
+      const total = track.children.length;
+
+      phopSlide = (phopSlide + step + total) % total;
+      track.style.transform = `translateX(-${phopSlide * 100}%)`;
+    }
+  </script>
+</body>
+</html>
