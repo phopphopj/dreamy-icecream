@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mango Monster — dreamy icecream</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html#home">
+        <img class="brand-mark" src="assets/logo.jpg" alt="logo" />
+        <span class="brand-text">dreamy icecream</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#home">home</a>
+        <a href="index.html#flavors">flavors</a>
+        <a href="index.html#menu">menu</a>
+        <a href="index.html#reviews">reviews</a>
+        <a href="index.html#order" class="nav-cta">order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="birthday-page">
+    <section class="birthday-section">
+      <div class="container birthday-layout">
+
+        <!-- carousel -->
+        <div class="birthday-carousel-card">
+          <div class="birthday-carousel">
+            <div class="birthday-track" id="mangoTrack">
+              <img src="assets/mango_monster.png" alt="Mango Monster 1">
+              <img src="assets/mango_monster2.png" alt="Mango Monster 2">
+              <img src="assets/mango_monster3.png" alt="Mango Monster 3">
+            </div>
+
+            <button class="birthday-arrow birthday-prev" onclick="moveMango(-1)">‹</button>
+            <button class="birthday-arrow birthday-next" onclick="moveMango(1)">›</button>
+          </div>
+        </div>
+
+        <!-- info -->
+        <div class="birthday-info-card">
+          <span class="pill pill-yellow">sorbet</span>
+
+          <h1>mango monster</h1>
+
+          <p class="lead">fresh mango sorbet.</p>
+          <p>sweet, juicy, and refreshing — a tropical burst in every scoop!</p>
+
+          <div class="birthday-details">
+            <div><strong>flavor:</strong> mango</div>
+            <div><strong>type:</strong> sorbet</div>
+            <div><strong>original price:</strong> 80 thb / cup</div>
+          </div>
+
+          <div class="order-actions">
+            <a class="btn btn-primary" href="index.html#order">order now</a>
+            <a class="btn btn-ghost" href="index.html#flavors">back to flavors</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let mangoSlide = 0;
+
+    function moveMango(step){
+      const track = document.getElementById("mangoTrack");
+      const total = track.children.length;
+
+      mangoSlide = (mangoSlide + step + total) % total;
+      track.style.transform = `translateX(-${mangoSlide * 100}%)`;
+    }
+  </script>
+</body>
+</html>
