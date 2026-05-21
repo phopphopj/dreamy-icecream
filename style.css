@@ -958,3 +958,6 @@ a[href*="instagram"]:hover{
 .label {
   color: #82529d;
 }
+.pill-orange {
+  color: orange;
+}
