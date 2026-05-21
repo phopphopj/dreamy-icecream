@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Solo Strawberry — dreamy icecream</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html#home">
+        <img class="brand-mark" src="assets/logo.jpg" alt="logo" />
+        <span class="brand-text">dreamy icecream</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html#home">home</a>
+        <a href="index.html#flavors">flavors</a>
+        <a href="index.html#menu">menu</a>
+        <a href="index.html#reviews">reviews</a>
+        <a href="index.html#order" class="nav-cta">order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="birthday-page">
+    <section class="birthday-section">
+      <div class="container birthday-layout">
+
+        <!-- carousel -->
+        <div class="birthday-carousel-card">
+          <div class="birthday-carousel">
+            <div class="birthday-track" id="strawTrack">
+              <img src="assets/solo_strawberry.png" alt="Solo Strawberry 1">
+              <img src="assets/solo_strawberry2.png" alt="Solo Strawberry 2">
+              <img src="assets/solo_strawberry3.png" alt="Solo Strawberry 3">
+            </div>
+
+            <button class="birthday-arrow birthday-prev" onclick="moveStraw(-1)">‹</button>
+            <button class="birthday-arrow birthday-next" onclick="moveStraw(1)">›</button>
+          </div>
+        </div>
+
+        <!-- info -->
+        <div class="birthday-info-card">
+          <span class="pill pill-red">sorbet</span>
+
+          <h1>solo strawberry</h1>
+
+          <p class="lead">fresh strawberry sorbet.</p>
+          <p>sweet, fruity, and refreshing — simple and delicious!</p>
+
+          <div class="birthday-details">
+            <div><strong>flavor:</strong> strawberry</div>
+            <div><strong>type:</strong> sorbet</div>
+            <div><strong>original price:</strong> 80 thb / cup</div>
+          </div>
+
+          <div class="order-actions">
+            <a class="btn btn-primary" href="index.html#order">order now</a>
+            <a class="btn btn-ghost" href="index.html#flavors">back to flavors</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let strawSlide = 0;
+
+    function moveStraw(step){
+      const track = document.getElementById("strawTrack");
+      const total = track.children.length;
+
+      strawSlide = (strawSlide + step + total) % total;
+      track.style.transform = `translateX(-${strawSlide * 100}%)`;
+    }
+  </script>
+</body>
+</html>
